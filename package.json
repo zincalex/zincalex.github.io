@@ -1,0 +1,59 @@
+{
+  "name": "zincalex.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "serve out -l 4173",
+    "admin": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/admin-server.mjs",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "shots": "playwright test"
+  },
+  "dependencies": {
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.1",
+    "class-variance-authority": "0.7.1",
+    "cn": "0.4.0",
+    "d3-geo": "3.1.1",
+    "i18n-iso-countries": "7.14.0",
+    "lucide-react": "1.55.0",
+    "motion": "14.1.0",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "svg-dotted-map": "2.0.1",
+    "three": "0.186.1",
+    "topojson-client": "3.1.0",
+    "world-atlas": "2.0.2"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.64.0",
+    "@tailwindcss/turbopack": "4.3.3",
+    "@types/d3-geo": "3.1.1",
+    "@types/geojson": "7946.0.16",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.186.0",
+    "@types/topojson-client": "3.1.5",
+    "@types/topojson-specification": "1.0.5",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.0",
+    "serve": "14.2.6",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3",
+    "vitest": "5.0.3"
+  },
+  "overrides": {
+    "stats-gl": {
+      "three": "$three"
+    }
+  }
+}
