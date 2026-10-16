@@ -130,8 +130,7 @@ export const site: SiteContent = {
         "We adapt training-free, similarity-based layer dropping from LLM-Drop to vision transformers (ViT, DeiT, DINOv2, DINOv3 and SwinV2) and compare four strategies: Block, Attention, MLP and Joint Layer Drop. Pruned models are evaluated with a frozen-backbone linear-probe classification benchmark across many downstream datasets, together with speed, FLOPs and energy measurements, statistical difference and equivalence tests, and automated model selection.",
       links: [
         { label: "Code", href: "https://github.com/zincalex/ViT-Drop", kind: "code" },
-        { label: "arXiv", href: "#", kind: "arxiv", placeholder: true }, // TODO: add arXiv link
-        { label: "PDF", href: "#", kind: "pdf", placeholder: true }, // TODO: add PDF link
+        { label: "arXiv", href: "https://arxiv.org/abs/2610.15005", kind: "arxiv" },
       ],
       // TODO: replace with official BibTeX
       bibtex: `@misc{viespoli2026retrainingfree,
